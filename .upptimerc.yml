@@ -1,0 +1,32 @@
+owner: buttonsoup
+repo: status
+
+sites:
+  - name: Application
+    url: https://rifthub.app/up
+  - name: Landing Page
+    url: https://rifthub.app
+  - name: Mailtrap SMTP
+    check: "tcp-ping"
+    url: live.smtp.mailtrap.io
+    port: 587
+
+status-website:
+  cname: status.rifthub.app
+  logoUrl: https://rifthub.app/icon.svg
+  name: RiftHub Status
+  introTitle: Card collection tracker & community tools
+  introMessage: Real-time uptime for RiftHub production, powered by [Upptime](https://upptime.js.org).
+  navbar:
+    - title: Status
+      href: /
+    - title: RiftHub
+      href: https://rifthub.app
+
+i18n:
+  liveStatus: Live status
+  allSystemsOperational: All systems operational
+  someSystemsNotOperational: Some systems are experiencing issues
+  allSystemsNotOperational: All systems are down
+  uptimeStatusOverPeriodText: Uptime over the last 90 days
+  incidentHistory: Incident history
