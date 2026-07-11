@@ -14,7 +14,7 @@ Public uptime monitor and status page for [RiftHub](https://rifthub.app), powere
 
 ## One-time setup
 
-1. Add repository secret **`GH_PAT`** — fine-grained GitHub PAT with read/write on Actions, Contents, Issues, and Workflows for this repo only.
+1. Add repository secret **`GH_PAT`** (required before Setup CI can commit) — fine-grained GitHub PAT with read/write on Actions, Contents, Issues, and Workflows for this repo only.
 2. Enable **GitHub Actions** on this repository.
 3. Run the **Setup CI** workflow (or push a change to `.upptimerc.yml`).
 4. Enable **GitHub Pages** → deploy from branch **`gh-pages`** / root (created after first Setup CI run).
