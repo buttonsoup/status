@@ -9,11 +9,11 @@
   --down-border-left-color: #ef4444;
   --down-background-color: rgba(127, 29, 29, 0.35);
   --degraded-border-left-color: #d7a63f;
-  --up-border-left-color: #d7a63f;
+  --up-border-left-color: #22c55e;
   --tag-color: #0a0a0a;
-  --tag-up-background-color: #d7a63f;
+  --tag-up-background-color: #22c55e;
   --tag-down-background-color: #ef4444;
-  --tag-degraded-background-color: #a07828;
+  --tag-degraded-background-color: #d7a63f;
   --change-background-color: #2a2a2a;
   --error-button-border-color: #a07828;
   --error-button-background-color: #d7a63f;
@@ -35,12 +35,6 @@ h2 {
   color: #d7a63f;
 }
 
-header h1 {
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
 nav .logo div {
   color: #d7a63f;
   font-weight: 700;
@@ -53,13 +47,43 @@ a:hover {
 }
 
 article.up {
-  border-left-color: #d7a63f;
-}
-
-article.down {
-  border-left-color: #ef4444;
+  border-left-color: #22c55e !important;
 }
 
 article.degraded {
-  border-left-color: #a07828;
+  border-left-color: #d7a63f !important;
+}
+
+article.down {
+  border-left-color: #ef4444 !important;
+}
+
+article.down-active {
+  background: rgba(127, 29, 29, 0.35);
+  border-color: #ef4444;
+}
+
+.tag.up {
+  background: #22c55e !important;
+}
+
+.tag.degraded {
+  background: #d7a63f !important;
+}
+
+.tag.down {
+  background: #ef4444 !important;
+}
+
+/* Upptime graph PNGs default to teal — tint by monitor status */
+article.up .graph {
+  filter: hue-rotate(72deg) saturate(1.15) brightness(1.05);
+}
+
+article.degraded .graph {
+  filter: hue-rotate(20deg) saturate(1.35) brightness(1.08);
+}
+
+article.down .graph {
+  filter: hue-rotate(300deg) saturate(1.5) brightness(0.95);
 }
