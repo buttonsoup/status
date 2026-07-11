@@ -6,11 +6,10 @@ Public uptime monitor and status page for [RiftHub](https://rifthub.app), powere
 
 ## Monitors
 
-| Name          | Target                            |
-| ------------- | --------------------------------- |
-| Application   | `https://rifthub.app/up`          |
-| Landing Page  | `https://rifthub.app`             |
-| Mailtrap SMTP | `live.smtp.mailtrap.io:587` (TCP) |
+| Name        | Target                   |
+| ----------- | ------------------------ |
+| Application | `https://rifthub.app/up` |
+| RiftHub     | `https://rifthub.app`    |
 
 ## One-time setup
 

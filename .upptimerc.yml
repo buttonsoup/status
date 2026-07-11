@@ -4,24 +4,33 @@ repo: status
 sites:
   - name: Application
     url: https://rifthub.app/up
-  - name: Landing Page
+    icon: https://rifthub.app/icon.svg
+  - name: RiftHub
     url: https://rifthub.app
-  - name: Mailtrap SMTP
-    check: "tcp-ping"
-    url: live.smtp.mailtrap.io
-    port: 587
+    icon: https://rifthub.app/icon.svg
 
 status-website:
   cname: status.rifthub.app
   logoUrl: https://rifthub.app/icon.svg
+  faviconSvg: https://rifthub.app/icon.svg
   name: RiftHub Status
+  theme: dark
+  themeUrl: https://status.rifthub.app/assets/rifthub-theme.css
   introTitle: Card collection tracker & community tools
-  introMessage: Real-time uptime for RiftHub production, powered by [Upptime](https://upptime.js.org).
+  introMessage: Real-time uptime for [RiftHub](https://rifthub.app) production.
   navbar:
     - title: Status
       href: /
     - title: RiftHub
       href: https://rifthub.app
+  metaTags:
+    - name: color-scheme
+      content: dark
+    - name: theme-color
+      content: "#0a0a0a"
+  css: |
+    html { color-scheme: dark; }
+    header h1 { color: #D7A63F !important; }
 
 i18n:
   liveStatus: Live status
