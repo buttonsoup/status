@@ -16,8 +16,6 @@ status-website:
   name: RiftHub Status
   theme: dark
   themeUrl: https://status.rifthub.app/rifthub-theme.css
-  introTitle: Card collection tracker & community tools
-  introMessage: Real-time uptime for [RiftHub](https://rifthub.app) production.
   navbar:
     - title: Status
       href: /
@@ -30,7 +28,7 @@ status-website:
       content: "#0a0a0a"
   css: |
     html { color-scheme: dark; }
-    header h1 { color: #D7A63F !important; }
+    main > header { display: none; }
 
 i18n:
   liveStatus: Live status
