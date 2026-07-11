@@ -15,7 +15,7 @@ status-website:
   faviconSvg: https://rifthub.app/icon.svg
   name: RiftHub Status
   theme: dark
-  themeUrl: https://status.rifthub.app/assets/rifthub-theme.css
+  themeUrl: https://status.rifthub.app/rifthub-theme.css
   introTitle: Card collection tracker & community tools
   introMessage: Real-time uptime for [RiftHub](https://rifthub.app) production.
   navbar:
